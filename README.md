@@ -1,7 +1,7 @@
 # Flutterwave (Laravel 5,7,8 Package)
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
-<!-- [![Software License][ico-license]](LICENSE.md) -->
+[![Software License][ico-license]](LICENSE.md)
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
@@ -42,13 +42,12 @@ I will be working on this next
 - Beneficiaries
 
 > If there are features you need urgently, I will be willing to prioritize them, please reach out to my twitter account
-<!-- ## License
+## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
 [ico-downloads]: https://img.shields.io/packagist/dt/kingflamez/laravelrave.svg?style=flat-square
-
 [link-packagist]: https://packagist.org/packages/oregs/laravelpay
 [link-downloads]: https://packagist.org/packages/oregs/laravelpay
 [link-author]: https://github.com/oregs
-[link-contributors]: ../../contributors -->
+[link-contributors]: ../../contributors
