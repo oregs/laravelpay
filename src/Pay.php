@@ -95,7 +95,8 @@ class Pay
         $transactionID = request()->transaction_id;
 
         if (!$transactionID) {
-            $transactionID = json_decode(request()->resp)->data->id;
+            
+            $transactionID = request()->status;
         }
 
         return $transactionID;
