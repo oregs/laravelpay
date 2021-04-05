@@ -41,7 +41,6 @@ I will be working on this next
 - Banks
 - Beneficiaries
 
-> If there are features you need urgently, I will be willing to prioritize them, please reach out to my twitter account
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
