@@ -25,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Oregsideas\\Laravelpay\\Providers\\PayServiceProvider"
+                "Oregsideas\\Pay\\PayServiceProvider"
             ],
             "aliases": {
                 "Pay": "Oregsideas\\Pay\\Facades\\Pay"
