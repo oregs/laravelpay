@@ -95,7 +95,7 @@ class Pay
         $transactionID = request()->transaction_id;
 
         if (!$transactionID) {
-            
+
             $transactionID = request()->status;
         }
 
@@ -107,9 +107,30 @@ class Pay
      * @param $id
      * @return object
      */
-    public function verifyTransaction($id)
+    public function verifyTransaction($transactionID)
     {
+        $curl = curl_init();
 
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => $this->baseUrl."/transactions/{$transactionID}/verify/",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_CUSTOMREQUEST => 'GET',
+            CURLOPT_HTTPHEADER => array(
+                'Content-Type: application/json',
+                'Authorization: Bearer '.$this->secretKey
+            )
+        ));
+
+
+        $pay = curl_exec($curl);
+
+        curl_close($curl);
+
+        return json_decode($pay);
     }
 
 
